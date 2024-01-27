@@ -28,3 +28,92 @@ img { /* improve media defaults */
 
 /* start CSS here */
 
+main.dashboard {
+  background-color: #FAFAFA;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 88px 1fr;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navbar {
+  grid-column: 1 / 2;
+  grid-row: span 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 20px;
+  border-right: 1px solid #EBECF2;
+
+  overflow: hidden;
+}
+
+.navbar .logo {
+  margin-bottom: 20px;
+}
+
+.nav-top {
+  margin-bottom: 20px;
+}
+
+ul.nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.theme {
+  padding: 8px; 
+  background-color: #fff;
+  border-radius: 100px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.theme .light-mode {
+  width: 30px;
+  height: 30px;
+  background-color: #34CAA5;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme .dark-mode {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .nav-bottom {
+  margin-top: auto;
+  margin-bottom: 50px;
+}
+
+.main-header {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+
+  display: flex;
+
+  overflow: hidden;
+}
+
+.content-body {
+  grid-column: 2 / -1;
+  grid-row: 2 / -1;
+
+  overflow: auto;
+}
