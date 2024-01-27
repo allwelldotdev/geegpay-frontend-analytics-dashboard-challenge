@@ -233,4 +233,106 @@ ul.nav {
   grid-row: 2 / -1;
 
   overflow: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  padding: 20px;
+  gap: 24px;
 }
+
+.content-body .sales-trends {
+  
+}
+
+.content-body .stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.stats .stat-box {
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #EDF2F7;
+  border-radius: 14px;
+}
+.stats .stat-box-icon-graph {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats .stat-box-icon-graph .stat-box-icon {
+  padding: 8px;
+  border-radius: 50%;
+  border: .71px solid #E6E6E6;
+}
+
+.stat-box-title {
+  margin-top: 10px;
+}
+
+.stat-box-title h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.625;
+  color: #898989;
+}
+
+.stat-box-value {
+  margin-block: 5px 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #3A3F51;
+}
+
+.stat-box-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-box-footer-rate {
+  padding: 4px 8px;  
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000px;
+}
+
+
+.stat-box-footer-rate.rate-up {
+  background-color: rgba(52, 202, 164, 0.12);
+}
+
+.stat-box-footer-rate.rate-up p {
+  font-size: .75rem;
+  font-weight: 500;
+  color: #34CAA5;
+}
+
+.stat-box-footer-rate.rate-down {
+  background-color: rgba(237, 83, 78, 0.12);
+}
+
+.stat-box-footer-rate.rate-down p {
+  font-size: .75rem;
+  font-weight: 500;
+  color: #ED544E;
+}
+
+.stat-box-footer-dimension p {
+  font-family: 'Inter', sans-serif;
+  font-size: .875rem;
+  color: #606060;
+}
+
+.content-body .last-orders {
+  
+}
+
+.content-body .top-platform {
+  
+}
+
