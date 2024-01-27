@@ -1,0 +1,30 @@
+/* import Google Font - Lato */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*, *::before, *::after {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+/* apply css reset */
+
+*, * ::before, * ::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body { /* typographic tweaks */
+  -webkit-font-smoothing: antialiased; 
+}
+
+img { /* improve media defaults */
+  display: block;
+  max-width: 100%;
+}
+
+/* start CSS here */
+
