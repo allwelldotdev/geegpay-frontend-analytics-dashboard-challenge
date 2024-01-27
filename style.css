@@ -191,6 +191,41 @@ ul.nav {
 
 .date-picker {
   margin-right: 38px;
+  display: flex;
+  gap: 10px;
+}
+
+.date-picker p {
+  font-weight: 500;
+  line-height: 22px;
+  font-size: .875rem;
+}
+
+.search-bar {
+  margin-right: 40px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 16px 24px 16px 16px;
+  background-color: #fff;
+  width: 350px;
+  border-radius: 24px;
+  border: 1px solid #DADDDD;
+}
+
+.search-bar form {
+  flex-grow: 1;
+}
+
+.search-bar form input {
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+}
+
+.search-bar form input:focus-visible {
+  outline: none;
 }
 
 .content-body {
