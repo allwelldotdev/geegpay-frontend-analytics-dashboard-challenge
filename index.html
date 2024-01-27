@@ -56,7 +56,7 @@
           </ul>
         </div>
       </nav>
-      <div class="header">
+      <div class="main-header">
         <h1 class="page-title">Dashboard</h1>
         <div class="search-bar">
           <form action=""><input type="text" placeholder="Search..." /></form>
@@ -86,6 +86,145 @@
             <img src="/assets/arrow-down.svg" alt="dropdown icon" />
           </div>
         </div>
+      </div>
+      <div class="content-body">
+        <div class="sales-trends">
+          <div class="header">
+            <h2>Sales Trends</h2>
+            <div class="filter">
+              <p>Short by:</p>
+            </div>
+            <div class="dropdown">
+              <select
+                name="sales-trend-date-filter"
+                id="sales-trend-date-filter"
+              >
+                <option value="weekly">Weekly</option>
+                <option value="daily">Daily</option>
+                <option value="monthly">Monthly</option>
+                <option value="yearly">Yearly</option>
+              </select>
+            </div>
+          </div>
+          <div class="graph"></div>
+        </div>
+        <div class="stats">
+          <div class="stat-box">
+            <div class="stat-box-icon-graph">
+              <div class="stat-box-icon">
+                <img src="/assets/stats/box-tick.svg" alt="box tick icon" />
+              </div>
+              <div class="stat-box-graph">
+                <img
+                  src="/assets/stats/graph/total-order.png"
+                  alt="total order graph image"
+                />
+              </div>
+            </div>
+            <div class="stat-box-title">
+              <h3>Total Order</h3>
+            </div>
+            <div class="stat-box-value">350</div>
+            <div class="stat-box-footer">
+              <div class="stat-box-footer-rate rate-up">
+                <img src="/assets/stats/trend/up.svg" alt="trending up icon" />
+                <p>23,5%</p>
+              </div>
+              <div class="stat-box-footer-dimension">
+                <p>vs. previous month</p>
+              </div>
+            </div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-icon-graph">
+              <div class="stat-box-icon">
+                <img src="/assets/stats/3d-rotate.svg" alt="3d rotate icon" />
+              </div>
+              <div class="stat-box-graph">
+                <img
+                  src="/assets/stats/graph/total-refund.png"
+                  alt="total refund graph image"
+                />
+              </div>
+            </div>
+            <div class="stat-box-title">
+              <h3>Total Refund</h3>
+            </div>
+            <div class="stat-box-value">270</div>
+            <div class="stat-box-footer">
+              <div class="stat-box-footer-rate rate-down">
+                <img
+                  src="/assets/stats/trend/down.svg"
+                  alt="trending down icon"
+                />
+                <p>23,5%</p>
+              </div>
+              <div class="stat-box-footer-dimension">
+                <p>vs. previous month</p>
+              </div>
+            </div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-icon-graph">
+              <div class="stat-box-icon">
+                <img
+                  src="/assets/stats/shopping-cart.svg"
+                  alt="shopping cart icon"
+                />
+              </div>
+              <div class="stat-box-graph">
+                <img
+                  src="/assets/stats/graph/average-sales.png"
+                  alt="average sales graph image"
+                />
+              </div>
+            </div>
+            <div class="stat-box-title">
+              <h3>Average Sales</h3>
+            </div>
+            <div class="stat-box-value">1567</div>
+            <div class="stat-box-footer">
+              <div class="stat-box-footer-rate rate-down">
+                <img
+                  src="/assets/stats/trend/down.svg"
+                  alt="trending down icon"
+                />
+                <p>23,5%</p>
+              </div>
+              <div class="stat-box-footer-dimension">
+                <p>vs. previous month</p>
+              </div>
+            </div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-icon-graph">
+              <div class="stat-box-icon">
+                <img src="/assets/stats/coin.svg" alt="coin icon" />
+              </div>
+              <div class="stat-box-graph">
+                <img
+                  src="/assets/stats/graph/total-income.png"
+                  alt="total income graph image"
+                />
+              </div>
+            </div>
+            <div class="stat-box-title">
+              <h3>Total Income</h3>
+            </div>
+            <div class="stat-box-value">$350.000</div>
+            <div class="stat-box-footer">
+              <div class="stat-box-footer-rate rate-up">
+                <img src="/assets/stats/trend/up.svg" alt="trending up icon" />
+                <p>23,5%</p>
+              </div>
+              <div class="stat-box-footer-dimension">
+                <p>vs. previous month</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="last-orders"></div>
+        <div class="top-platform"></div>
       </div>
     </main>
   </body>
