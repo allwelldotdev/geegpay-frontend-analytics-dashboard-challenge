@@ -150,8 +150,20 @@ ul.nav {
   gap: 8px;
 }
 
-.user-account-name-email .name {
+.user-account-name-email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
 
+.user-account-name-email .name {
+  font-size: 1rem;
+}
+
+.user-account-name-email .email {
+  font-size: .875rem;
+  color: #787486;
 }
 
 .user-account .user-account-image img {
@@ -168,6 +180,17 @@ ul.nav {
 
 .user-account .user-account-dropdown-icon {
   padding-right: 6px;
+}
+
+.bell-notification {
+  margin-right: 20px;
+  padding: 11px;
+  border: .77px solid #DADDDD;
+  border-radius: 50%;
+}
+
+.date-picker {
+  margin-right: 38px;
 }
 
 .content-body {
