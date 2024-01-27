@@ -1,5 +1,8 @@
-/* import Google Font - Lato */
+/* import Google Font - Plus Jakarta Sans */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* import Google Font - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *, *::before, *::after {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -107,8 +110,64 @@ ul.nav {
   grid-row: 1 / 2;
 
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
   overflow: hidden;
+
+  border-bottom: 1px solid #E5EAEF;
+  padding-inline: 18px;
+}
+
+.main-header * {
+  font-family: 'Inter', sans-serif;
+}
+
+.main-header h1 {
+  margin-right: auto;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.user-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 6px 8px;
+  gap: 12px;
+
+  border: 1px solid #DADDDD;
+  border-radius: 28px;
+}
+
+.user-account-image-name-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-account-name-email .name {
+
+}
+
+.user-account .user-account-image img {
+  width: 38px;
+  transform: translateY(-8px);
+}
+
+.user-account .user-account-image {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-account .user-account-dropdown-icon {
+  padding-right: 6px;
 }
 
 .content-body {
