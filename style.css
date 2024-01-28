@@ -232,7 +232,7 @@ ul.nav {
   grid-column: 2 / -1;
   grid-row: 2 / -1;
 
-  overflow-y: scroll;
+  overflow-y: hidden;
 
   display: grid;
   grid-template-columns: 1fr 500px;
@@ -246,6 +246,11 @@ ul.nav {
   border: 1px solid #EDF2F7;
   background-color: #fff;
 }
+
+/* .content-body .top-platform {
+  height: calc(100vh - 546px);
+  overflow-y: auto;
+} */
 
 .sales-trends .header h2,
 .last-orders .header h2,
@@ -374,12 +379,13 @@ select#sales-trends-date-filter {
   color: #606060;
 }
 
-.content-body .last-orders {
-  
-}
-
 .last-orders .header {
   margin-bottom: 20px;
+}
+
+.last-orders_wrapper {
+  height: calc(100vh - 626px);
+  overflow-y: auto;
 }
 
 .last-orders_wrapper table {
@@ -396,11 +402,31 @@ select#sales-trends-date-filter {
   line-height: 1.5;
 }
 
-table thead th {
-  padding-bottom: 20px;  
+.last-orders_wrapper table thead th {
+  padding-bottom: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #EDF2F6;
 }
 
-table tbody tr {
+table thead th:nth-child(1) {
+  width: 32.77%;
+}
+table thead th:nth-child(2) {
+  width: 19.71%;
+}
+table thead th:nth-child(3) {
+  width: 20.10%;
+}
+table thead th:nth-child(4) {
+  width: 16.97%;
+}
+table thead th:nth-child(5) {
+  width: 10.44%;
+}
+
+table tbody tr:not(:first-child) {
   border-top: 1px solid #EDF2F6;
 }
 
@@ -428,6 +454,52 @@ table .last-orders-icon {
 }
 .last-orders-icon.people-phillip {
   background: url(/assets/people/phillip-lubin.jpg) center/cover no-repeat;
+}
+
+tbody .last-orders-name {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #3A3F51;
+}
+
+tbody .last-orders-date {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #737373;
+}
+
+tbody .last-orders-amount {
+  font-weight: 500;
+  line-height: 1.5;
+  color: #0D062D;
+}
+
+tbody .last-orders-status {
+  line-height: 1.5;
+}
+
+tbody .last-orders-status.paid {
+  color: #34CAA5;
+}
+tbody .last-orders-status.refund {
+  color: #ED544E;
+}
+
+tbody .last-orders-invoice button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+tbody .last-orders-invoice button p {
+  font-size: .875rem;
+  line-height: 1.57;
+  color: #0D062D;
 }
 
 table .last-orders-icon-name-table-data {
@@ -470,7 +542,9 @@ table .last-orders-icon-name-table-data {
   flex-direction: column;
   gap: 20px;
 
-  /* overflow-y: auto; */
+  height: calc(100vh - 626px);
+
+  overflow-y: auto;
   /* height: 300px; */
 }
 
