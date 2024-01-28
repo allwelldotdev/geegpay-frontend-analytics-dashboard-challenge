@@ -233,7 +233,6 @@ ul.nav {
   grid-row: 2 / -1;
 
   overflow-y: scroll;
-  /* height: 100vh; */
 
   display: grid;
   grid-template-columns: 1fr 500px;
@@ -388,9 +387,74 @@ select#sales-trends-date-filter {
   background-color: #fff;
   border-radius: 14px;
   border: 1px solid #EDF2F7;
+
+  place-self: start stretch;
+}
+
+.top-platform .header,
+.last-orders .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-platform .header {
+  margin-bottom: 20px;
+}
+
+.top-platform .header p,
+.last-orders .header p {
+  color: #34CAA5;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  font-weight: 500;
 }
 
 .top-platform .top-platform_platform_wrapper {
-  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  /* overflow-y: auto; */
+  /* height: 300px; */
+}
+
+.top-platform_platform {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.top-platform_platform-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-platform_platform-range-counter {
+  border-radius: 40px;
+  height: 12px;
+}
+
+.top-platform_platform-range-counter.first {
+  background-color: #6160DC;
+  width: 55%;
+}
+.top-platform_platform-range-counter.second {
+  background-color: #54C5EB;
+  width: 45%;
+}
+.top-platform_platform-range-counter.third {
+  background-color: #FFB74A;
+  width: 35%;
+}
+.top-platform_platform-range-counter.fourth {
+  background-color: #FF4A55;
+  width: 25%;
+}
+
+.top-platform_platform-range {
+  background-color: #F5F5F5;
+  border-radius: 40px;
+  overflow: hidden;
 }
 
