@@ -378,10 +378,65 @@ select#sales-trends-date-filter {
   
 }
 
-.last-orders .last-orders_wrapper {
-  
+.last-orders .header {
+  margin-bottom: 20px;
 }
 
+.last-orders_wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.last-orders_wrapper table thead {
+  text-align: left;
+  color: #9CA4AB;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+table thead th {
+  padding-bottom: 20px;  
+}
+
+table tbody tr {
+  border-top: 1px solid #EDF2F6;
+}
+
+table tbody tr td {
+  padding-block: 12px 16px;
+}
+
+table .last-orders-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.last-orders-icon.people-marcus {
+  background: url(/assets/people/marcus-bergson.jpg) center/cover no-repeat;
+}
+.last-orders-icon.people-jaydon {
+  background: url(/assets/people/jaydon-vaccaro.jpg) center/cover no-repeat;
+}
+.last-orders-icon.people-corey {
+  background: url(/assets/people/corey-schleifer.jpg) center/cover no-repeat;
+}
+.last-orders-icon.people-cooper {
+  background: url(/assets/people/cooper-press.jpg) center/cover no-repeat;
+}
+.last-orders-icon.people-phillip {
+  background: url(/assets/people/phillip-lubin.jpg) center/cover no-repeat;
+}
+
+table .last-orders-icon-name-table-data {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content-body .last-orders,
 .content-body .top-platform {
   padding: 16px;
   background-color: #fff;
