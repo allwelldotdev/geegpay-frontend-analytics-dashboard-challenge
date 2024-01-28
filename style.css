@@ -232,7 +232,8 @@ ul.nav {
   grid-column: 2 / -1;
   grid-row: 2 / -1;
 
-  overflow: auto;
+  overflow-y: scroll;
+  /* height: 100vh; */
 
   display: grid;
   grid-template-columns: 1fr 500px;
@@ -241,7 +242,53 @@ ul.nav {
 }
 
 .content-body .sales-trends {
-  
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #EDF2F7;
+  background-color: #fff;
+}
+
+.sales-trends .header h2,
+.last-orders .header h2,
+.top-platform .header h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #26282C;
+}
+
+.sales-trends .header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* .sales-trends .graph {
+  min-height: 290px;
+} */
+
+.sales-trends .header h2 {
+  margin-right: auto;
+}
+
+.sales-trends .filter p {
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 1.57;
+  color: #3A3F51;
+}
+
+.sales-trends .filter {
+  margin-right: 10px;
+}
+
+select#sales-trends-date-filter {
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #E1DFDF;
+  font-size: .75rem;
+  line-height: 1.3;
 }
 
 .content-body .stats {
@@ -332,7 +379,18 @@ ul.nav {
   
 }
 
+.last-orders .last-orders_wrapper {
+  
+}
+
 .content-body .top-platform {
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 14px;
+  border: 1px solid #EDF2F7;
+}
+
+.top-platform .top-platform_platform_wrapper {
   
 }
 
